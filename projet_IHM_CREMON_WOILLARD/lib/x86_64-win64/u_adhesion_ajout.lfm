@@ -1,0 +1,43 @@
+object f_adhesion_ajout: Tf_adhesion_ajout
+  Left = 225
+  Height = 160
+  Top = 161
+  Width = 320
+  Caption = 'f_adhesion_ajout'
+  ClientHeight = 160
+  ClientWidth = 320
+  ParentFont = True
+  LCLVersion = '1.6.0.4'
+  object pnl_titre: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 320
+    Align = alTop
+    Caption = 'Adhésion à un thème'
+    TabOrder = 0
+  end
+  object pnl_detail: TPanel
+    Left = 0
+    Height = 110
+    Top = 50
+    Width = 320
+    Align = alClient
+    ClientHeight = 110
+    ClientWidth = 320
+    TabOrder = 1
+    object cbo_adhesion_theme: TComboBox
+      Left = 0
+      Height = 26
+      Top = 0
+      Width = 320
+      AutoComplete = True
+      AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
+      ItemHeight = 20
+      OnCloseUp = cbo_adhesion_themeCloseUp
+      ReadOnly = True
+      Style = csOwnerDrawFixed
+      TabOrder = 0
+    end
+  end
+end

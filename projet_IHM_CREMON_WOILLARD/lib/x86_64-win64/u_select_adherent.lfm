@@ -1,0 +1,301 @@
+object f_select_adherent: Tf_select_adherent
+  Left = 223
+  Height = 720
+  Top = 428
+  Width = 280
+  Caption = 'f_select_adherent'
+  ClientHeight = 720
+  ClientWidth = 280
+  ParentFont = True
+  LCLVersion = '1.6.0.4'
+  object pnl_titre: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 280
+    Align = alTop
+    Caption = 'Sélection'
+    TabOrder = 0
+  end
+  object pnl_choix: TPanel
+    Left = 0
+    Height = 670
+    Top = 50
+    Width = 280
+    Align = alClient
+    ClientHeight = 670
+    ClientWidth = 280
+    TabOrder = 1
+    object pnl_tous: TPanel
+      Left = 1
+      Height = 102
+      Top = 1
+      Width = 278
+      Align = alTop
+      AutoSize = True
+      ClientHeight = 102
+      ClientWidth = 278
+      TabOrder = 0
+      object pnl_tous_btn: TPanel
+        Left = 1
+        Height = 30
+        Top = 1
+        Width = 276
+        Align = alTop
+        Caption = 'Tous'
+        TabOrder = 0
+        OnClick = pnl_choix_btnClick
+      end
+      object pnl_tous_edit: TPanel
+        Left = 1
+        Height = 70
+        Top = 31
+        Width = 276
+        Align = alTop
+        TabOrder = 1
+      end
+    end
+    object pnl_num: TPanel
+      Left = 1
+      Height = 102
+      Top = 103
+      Width = 278
+      Align = alTop
+      AutoSize = True
+      ClientHeight = 102
+      ClientWidth = 278
+      TabOrder = 1
+      object pnl_num_btn: TPanel
+        Left = 1
+        Height = 30
+        Top = 1
+        Width = 276
+        Align = alTop
+        Caption = 'Numéro'
+        TabOrder = 0
+        OnClick = pnl_choix_btnClick
+      end
+      object pnl_num_edit: TPanel
+        Left = 1
+        Height = 70
+        Top = 31
+        Width = 276
+        Align = alTop
+        ClientHeight = 70
+        ClientWidth = 276
+        TabOrder = 1
+        object edt_num: TEdit
+          Left = 112
+          Height = 28
+          Top = 16
+          Width = 80
+          AutoSize = False
+          BorderStyle = bsNone
+          Font.Color = clBlack
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+    end
+    object pnl_catsoc: TPanel
+      Left = 1
+      Height = 102
+      Top = 205
+      Width = 278
+      Align = alTop
+      AutoSize = True
+      ClientHeight = 102
+      ClientWidth = 278
+      TabOrder = 2
+      object pnl_catsoc_btn: TPanel
+        Left = 1
+        Height = 30
+        Top = 1
+        Width = 276
+        Align = alTop
+        Caption = 'Catégorie socio'
+        TabOrder = 0
+        OnClick = pnl_choix_btnClick
+      end
+      object pnl_catsoc_edit: TPanel
+        Left = 1
+        Height = 70
+        Top = 31
+        Width = 276
+        Align = alTop
+        ClientHeight = 70
+        ClientWidth = 276
+        TabOrder = 1
+        object edt_catsoc: TEdit
+          Left = 24
+          Height = 28
+          Top = 16
+          Width = 232
+          AutoSize = False
+          BorderStyle = bsNone
+          Font.Color = clBlack
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+    end
+    object pnl_identite: TPanel
+      Left = 1
+      Height = 152
+      Top = 307
+      Width = 278
+      Align = alTop
+      AutoSize = True
+      ClientHeight = 152
+      ClientWidth = 278
+      TabOrder = 3
+      object pnl_identite_btn: TPanel
+        Left = 1
+        Height = 30
+        Top = 1
+        Width = 276
+        Align = alTop
+        Caption = 'Identité'
+        TabOrder = 0
+        OnClick = pnl_choix_btnClick
+      end
+      object pnl_identite_edit: TPanel
+        Left = 1
+        Height = 120
+        Top = 31
+        Width = 276
+        Align = alTop
+        ClientHeight = 120
+        ClientWidth = 276
+        TabOrder = 1
+        object lbl_nom_ident: TLabel
+          Left = 64
+          Height = 15
+          Top = 8
+          Width = 25
+          Caption = 'nom'
+          ParentColor = False
+        end
+        object edt_nom_ident: TEdit
+          Left = 64
+          Height = 28
+          Top = 32
+          Width = 144
+          AutoSize = False
+          BorderStyle = bsNone
+          Font.Color = clBlack
+          ParentFont = False
+          TabOrder = 0
+        end
+        object lbl_prenom: TLabel
+          Left = 64
+          Height = 15
+          Top = 64
+          Width = 42
+          Caption = 'Prénom'
+          ParentColor = False
+        end
+        object edt_prenom: TEdit
+          Left = 64
+          Height = 28
+          Top = 88
+          Width = 144
+          AutoSize = False
+          BorderStyle = bsNone
+          Font.Color = clBlack
+          ParentFont = False
+          TabOrder = 1
+        end
+      end
+    end
+    object pnl_commune: TPanel
+      Left = 1
+      Height = 152
+      Top = 459
+      Width = 278
+      Align = alTop
+      AutoSize = True
+      ClientHeight = 152
+      ClientWidth = 278
+      TabOrder = 4
+      object pnl_commune_btn: TPanel
+        Left = 1
+        Height = 30
+        Top = 1
+        Width = 276
+        Align = alTop
+        Caption = 'Commune'
+        TabOrder = 0
+        OnClick = pnl_choix_btnClick
+      end
+      object pnl_commune_edit: TPanel
+        Left = 1
+        Height = 120
+        Top = 31
+        Width = 276
+        Align = alTop
+        ClientHeight = 120
+        ClientWidth = 276
+        TabOrder = 1
+        object lbl_code_postal: TLabel
+          Left = 64
+          Height = 15
+          Top = 8
+          Width = 61
+          Caption = 'code postal'
+          ParentColor = False
+        end
+        object edt_code_postal: TEdit
+          Left = 64
+          Height = 28
+          Top = 32
+          Width = 144
+          AutoSize = False
+          BorderStyle = bsNone
+          Font.Color = clBlack
+          ParentFont = False
+          TabOrder = 0
+        end
+        object lbl_nom_com: TLabel
+          Left = 64
+          Height = 15
+          Top = 64
+          Width = 25
+          Caption = 'nom'
+          ParentColor = False
+        end
+        object edt_nom_com: TEdit
+          Left = 64
+          Height = 28
+          Top = 88
+          Width = 144
+          AutoSize = False
+          BorderStyle = bsNone
+          Font.Color = clBlack
+          ParentFont = False
+          TabOrder = 1
+        end
+      end
+    end
+    object pnl_rechercher: TPanel
+      Left = 1
+      Height = 50
+      Top = 611
+      Width = 278
+      Align = alTop
+      ClientHeight = 50
+      ClientWidth = 278
+      TabOrder = 5
+      object btn_rechercher: TButton
+        Left = 88
+        Height = 25
+        Top = 8
+        Width = 88
+        Caption = 'Rechercher'
+        Default = True
+        OnClick = btn_rechercherClick
+        TabOrder = 0
+      end
+    end
+  end
+end
